@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CW2 - NFA,DFA and RegExp Results </title>
+</head>
+
+<body>
+
+<h2 id=title></h2>
+
+<p>Founded an array of integers less than 50 accepted by each automaton</p>
+
+<pre id=out></pre>
+
+<hr />
+<b>Logic</b>
+
+<style>
+    table { 
+        border-collapse: collapse; 
+        margin: 0 50px; 
+    }
+    th { 
+        color: blue; 
+        padding: 5px 12px; 
+    }
+    td { 
+        border: 1px solid blue; 
+        padding: 5px 12px; 
+        text-align: center; 
+    }
+</style>
+<br>
+<table style="float:left;"> 
+<tr><th></th><th>0</th><th>1</th></tr>
+<tr><th> > a</th><td>ab</td><td>a</td></tr>
+<tr><th>&emsp;b</th><td>c</td><td>ϕ</td></tr>
+<tr><th>* c</th><td>ϕ</td><td>ϕ</td></tr>
+</table> 
+
+<table>
+<tr><th></th><th>0</th><th>1</th></tr>
+<tr><th> >  a</th><td>ab</td><td>a</td></tr>
+<tr><th>&emsp; ab</th><td>abc</td><td>a</td></tr>
+<tr><th>* abc</th><td>abc</td><td>a</td></tr>
+</table>
+
+
+
+<pre id=sample></pre>
+
+<hr />
+
+<script>
+"use strict";
+function union(a, b) { //set operation using strings
+    let s = a
+    for (let x of b) if (!a.includes(x)) s += x
+    return s
+}
+function intersect(a, b) {
+    let s = ''
+    for (let x of b) if (a.includes(x)) s += x
+    return s
+}
+function deltaNFA(q, c) { // (1|0)*00
+    if (q=='a' && c=='0') return 'ab'
+    if (q=='a' && c=='1') return 'a'
+    if (q=='b' && c=='0') return 'c' 
+    return '';  //default -- no transition
+}
+function deltaDFA(q, c) { // (1|0)*00
+    if (q=='P' && c=='0') return 'R'
+	if (q=='P' && c=='1') return 'P'
+	if (q=='R' && c=='0') return 'L'
+	if (q=='R' && c=='1') return 'P'
+	if (q=='L' && c=='0') return 'L'
+	if (q=='L' && c=='1') return 'P' //default -- no transition
+}
+function acceptNFA(w, F='c', Q='a') {
+    //w: input String
+    //F: final state(s)
+    //Q: current state(s)
+    let i = 0, txt = Q
+    while (i < w.length) {
+        let c = w[i], T=''
+        for (let q of Q) 
+            T = union(T, deltaNFA(q, c))
+        Q = T
+        if (Q == '') break
+        i++; txt += ", "+c+" -> "+Q+'\n'+Q
+    }
+    return intersect(Q, F).length > 0
+}
+
+function acceptDFA(w, F='L', Q='P') {
+    //w: input String
+    //F: final state(s)
+    //Q: current state(s)
+    let i = 0, txt = Q
+    while (i < w.length) {
+        let c = w[i], T=''
+        for (let q of Q) 
+            T = union(T, deltaDFA(q, c))
+        Q = T
+        if (Q == '') break
+        i++; txt += ", "+c+" -> "+Q+'\n'+Q
+    }
+    return intersect(Q, F).length > 0
+}
+function test() {
+
+    let x = [], y = [], z = [];
+	let e = /00$/
+	
+    for (let n=1; n<50; n++) {
+        let w = n.toString(2)  // to binary
+        
+		if (acceptNFA(w)) x.push(n);
+		if (acceptDFA(w)) y.push(n);
+		if (e.test(w)) z.push(n);
+      
+    }
+    out.innerHTML = "NFA:[" + x + "]" + '<br>' + "DFA:[" + y + "]" + '<br>'+"RegExp:[" + z + "]"
+}
+    title.innerText = document.title;
+    sample.innerText = deltaNFA + '\n' + acceptNFA + '\n' + deltaDFA + '\n' + acceptDFA + '\n' + test;
+    test();
+</script>
+</body>
+</html>
