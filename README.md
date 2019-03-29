@@ -7,3 +7,6 @@ CW2: [NFA,DFA and RegExp](https://sahinalcin.github.io/MyAutomataWorks/CW2/CW2.h
 CW3: [Regular Expressions](https://sahinalcin.github.io/MyAutomataWorks/CW3/CW3.html)
 
 CW4: [CFG for Palindrome](https://sahinalcin.github.io/MyAutomataWorks/CW4/CW4.html)
+
+# home works
+HW1: [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
