@@ -44,7 +44,7 @@ class Binary {
       }
    }
    toTree() {
-      return this.oper+'\n'+" "+this.left.toTree()+this.right.toTree()
+      return this.oper+'\n '+" "+this.left.toTree()+" "+this.right.toTree()
    }
    toPostfix() {
       return this.left.toPostfix()+this.right.toPostfix()+this.oper+' '
