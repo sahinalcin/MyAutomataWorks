@@ -10,5 +10,7 @@ My BLM320E Automata Theory Course Works
 
 * CW4 : [CFG for Palindrome](https://sahinalcin.github.io/MyAutomataWorks/CW4/CW4.html)
 
+* CW5 : [Expression Parser](https://sahinalcin.github.io/MyAutomataWorks/CW5/CW5.html)
+
 ### Home Works
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
