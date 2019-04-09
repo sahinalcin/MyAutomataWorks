@@ -12,5 +12,7 @@ My BLM320E Automata Theory Course Works
 
 * CW5 : [Expression Parser](https://sahinalcin.github.io/MyAutomataWorks/CW5/Expression.html)
 
+* CW6 : [Push Down Automata](https://sahinalcin.github.io/MyAutomataWorks/CW6/CW6.html)
+
 ### Home Works
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
