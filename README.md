@@ -14,5 +14,7 @@ My BLM320E Automata Theory Course Works
 
 * CW6 : [Push Down Automata](https://sahinalcin.github.io/MyAutomataWorks/CW6/CW6.html)
 
+* CW7 : [microJ3 example](https://sahinalcin.github.io/MyAutomataWorks/CW7/microJ3.html)
+
 ### Home Works
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
