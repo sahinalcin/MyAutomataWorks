@@ -20,4 +20,4 @@ My BLM320E Automata Theory Course Works
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
 
 ### Term Project
-* [Regular Expressions](https://sahinalcin.github.io/MyAutomataWorks/TERM PROJECT/MyTermProject.html)
+* [Regular Expressions](https://sahinalcin.github.io/MyAutomataWorks/TERM_PROJECT/MyTermProject.html)
