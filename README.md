@@ -1,4 +1,4 @@
-# MyAutomataWorks
+# ŞAHİN ALÇIN
 My BLM320E Formal Languages and Automata Theory Course Works
 
 ### Term Project
