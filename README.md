@@ -19,7 +19,19 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * CW7 : [MicroJ3](https://sahinalcin.github.io/MyAutomataWorks/CW7/microJ3.html)
 
+* CW8 : [Proposal Screenshot of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW8/CW8.png)
+
+* CW9 : [Final Version and Demo of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW9/CW9.html)
+
+* CW10 : [Graph Algorithms](https://sahinalcin.github.io/MyAutomataWorks/CW10/CW10.html)
+
+
 ### Home Works
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
 
+* HW2 : [Parsing of Math Operations](https://sahinalcin.github.io/MyAutomataWorks/HW2/HW2.html)
+
+* HW3 : [MicroJ1 Modifying](https://sahinalcin.github.io/MyAutomataWorks/HW3/HW3.html)
+
+* HW4 : [Term Project First Version](https://sahinalcin.github.io/MyAutomataWorks/HW4/HW4.html)
 
