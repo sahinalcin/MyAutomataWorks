@@ -21,7 +21,7 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * CW8 : [Proposal Screenshot of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW8/CW8.PNG)
 
-* CW9 : [Final Version and Demo of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW9/CW9.html)
+* CW9 : [First Version of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW9/CW9.html)
 
 * CW10 : [Graph Algorithms](https://sahinalcin.github.io/MyAutomataWorks/CW10/CW10.html)
 
@@ -33,5 +33,5 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * HW3 : [MicroJ1 Modifying](https://sahinalcin.github.io/MyAutomataWorks/HW3/HW3.html)
 
-* HW4 : [Term Project First Version](https://sahinalcin.github.io/MyAutomataWorks/HW4/HW4.html)
+* HW4 : [Term Project Demo Version](https://sahinalcin.github.io/MyAutomataWorks/HW4/HW4.html)
 
