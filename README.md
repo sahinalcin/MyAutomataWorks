@@ -19,7 +19,7 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * CW7 : [MicroJ3](https://sahinalcin.github.io/MyAutomataWorks/CW7/microJ3.html)
 
-* CW8 : [Proposal Screenshot of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW8/CW8.png)
+* CW8 : [Proposal Screenshot of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW8/CW8.PNG)
 
 * CW9 : [Final Version and Demo of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW9/CW9.html)
 
