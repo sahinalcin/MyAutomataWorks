@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>REGULAR EXPRESSIONS</title>
+  <style>
+  a {color:#045DEB;}
+  h5 {color:white;}
+  h2 {color:orange;}
+  h6 {text-align:left; color:white;}
+  b {color:orange;}
+
+  .jumbotron{text-align:center; background-color:#1F2739;}
+    #def { background-color:cyan; width: 520px; padding: 10px;}
+    #inp { background-color:cyan; width: 520px; height:150px; padding: 10px;}
+    .found { color: magenta; }
+	
+
+
+td, th{
+  border: 1px solid;
+  text-align: left;
+  padding: 3px;
+  color: white;
+}
+
+  </style>
+  
+</head>
+<body>
+<div class="jumbotron">
+<h2 id=title></h2>
+
+<h6>
+&emsp; &emsp; Regex, or regular expressions, are a pattern matching markup that programmers use to search for certain patterns in text. Regular expressions can search for just about anything, depending on how you structure them; they're used all over by programmers because they're invaluable for helping computers sort through data quickly and filter out nonsense that could otherwise cause errors.
+Regular expressions tend to look scary, especially for non-programmers. Just look at this: [a-zA-Z0-9_.+-]+@[a-zA-Z0-9_-]+\.[a-zA-Z0-9_.-]+ 
+<br>
+<br>
+&emsp;&emsp;Realistically, it's actually not that bad; that one matches email addresses. As you'll see, expressions can be broken down into individual characters, all of which tell the program what to look for.
+Regular expressions are almost universal. The same general syntax applies across all languages with only slight variations here and there. This guide contains examples from both Python and JavaScript as well as plain old regex. If you work with a different language, don't worry. Nearly everything will apply to your language of choice, too.
+</h6>
+<br>
+
+<b>Define Your RegExp</b>
+</p>
+<p>
+<input type=text id="def" onKeyUp="checkRE()">&emsp; 
+<br>
+</p>
+
+<br>
+<b>Input Your Test String</b>
+</p>
+<p>
+<textarea type=text id="inp" onKeyUp="checkRE()"></textarea>&emsp; 
+<br>
+</p>
+<br>
+
+<b>See Output</b>
+<p> 
+<h5 id=out></h5>
+<br>
+</p>
+<br>
+<br>
+
+<hr></hr>
+<h2><span>Brackets</span></h2>
+   <table id="brackets" style="width:70%" align="center">
+     
+	<tr>
+        <th>Expression</th>
+        <th>Description</th>
+	</tr>
+	 
+    <tr>
+       <td>[abc]</td>
+       <td>Find any character between the brackets</td>
+    </tr>
+		 
+      <tr>
+       <td>[^abc]</td>
+       <td>Find any character NOT between the brackets</td>
+    </tr>
+
+    <tr>
+       <td>[0-9]</td>
+       <td>	Find any character between the brackets (any digit)</td>
+    </tr>
+	
+	<tr>
+       <td>[^0-9]</td>
+       <td>Find any character NOT between the brackets (any non-digit)</td>
+    </tr>
+	
+	<tr>
+       <td>(x|y)</td>
+       <td>	Find any of the alternatives specified</td>
+    </tr>
+</table>
+<br>
+<h2><span>Metacharacters</span></h2>
+   <table id="metacharacters" style="width:70%" align="center">
+     
+	<tr>
+        <th>Metacharacter</th>
+        <th>Description</th>
+	</tr>
+	 
+    <tr>
+    <td>.</td>
+    <td>Find a single character, except newline or line terminator</td>
+  </tr>
+  <tr>
+    <td>\w</td>
+    <td>Find a word character</td>
+  </tr>
+  <tr>
+    <td>\W</td>
+    <td>Find a non-word character</td>
+  </tr>
+  <tr>
+    <td>\d</td>
+    <td>Find a digit</td>
+  </tr>
+  <tr>
+    <td>\D</td>
+    <td>Find a non-digit character</td>
+  </tr>
+  <tr>
+    <td>\s</td>
+    <td>Find a whitespace character</td>
+  </tr>
+  <tr>
+    <td>\S</td>
+    <td>Find a non-whitespace character</td>
+  </tr>
+  <tr>
+    <td>\b</td>
+    <td>Find a match at the beginning/end of a word</td>
+  </tr>
+  <tr>
+    <td>\B</td>
+    <td>Find a match not at the beginning/end of a word</td>
+  </tr>
+  <tr>
+    <td>\0</td>
+    <td>Find a NUL character</td>
+  </tr>
+  <tr>
+    <td>\n</td>
+    <td>Find a new line character</td>
+  </tr>
+  <tr>
+    <td>\f</td>
+    <td>Find a form feed character</td>
+  </tr>
+  <tr>
+    <td>\r</td>
+    <td>Find a carriage return character</td>
+  </tr>
+  <tr>
+    <td>\t</td>
+    <td>Find a tab character</td>
+  </tr>
+  <tr>
+    <td>\v</td>
+    <td>Find a vertical tab character</td>
+  </tr>
+  <tr>
+    <td>\xxx</td>
+    <td>Find the character specified by an octal number xxx</td>
+  </tr>
+  <tr>
+    <td>\xdd</td>
+    <td>Find the character specified by a hexadecimal number dd</td>
+  </tr>
+  <tr>
+    <td>\udddd</td>
+    <td>Find the Unicode character specified by a hexadecimal number dddd</td>
+  </tr>
+ </table>
+ 
+<br> 
+<table id="quantifiers" style="width:70%" align="center"> 
+<h2><span>Quantifiers</span></h2>
+<tr>
+    <th>Quantifier</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>n+</td>
+    <td>Matches any string that contains at least one <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n*</td>
+    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n?</td>
+    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n{X}</td>
+    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
+  </tr>
+  <tr>
+    <td>n{X,Y}</td>
+    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
+  </tr>
+  <tr>
+    <td>n{X,}</td>
+    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
+  </tr>
+  <tr>
+    <td>n$</td>
+    <td>Matches any string with <em>n</em> at the end of it</td>
+  </tr>
+  <tr>
+    <td>^n</td>
+    <td>Matches any string with <em>n</em> at the beginning of it</td>
+  </tr>
+  <tr>
+    <td>?=n</td>
+    <td>Matches any string that is followed by a specific string <em>n</em></td>
+  </tr>
+  <tr>
+    <td>?!n</td>
+    <td>Matches any string that is not followed by a specific string <em>n</em></td>
+  </tr>
+</table> 
+<br>
+
+<table id="objectProperties" style="width:70%" align="center"> 
+<h2><span>RegExp Object Properties</span></h2>
+<tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>constructor</td>
+    <td>Returns the function that created the RegExp object's prototype</td>
+  </tr>
+  <tr>
+    <td>global</td>
+    <td>Checks whether the "g" modifier is set</td>
+  </tr>
+  <tr>
+    <td>ignoreCase</td>
+    <td>Checks whether the "i" modifier is set</td>
+  </tr>
+  <tr>
+    <td>lastIndex</td>
+    <td>Specifies the index at which to start the next match</td>
+  </tr>
+  <tr>
+    <td>multiline</td>
+    <td>Checks whether the "m" modifier is set</td>
+  </tr>
+  <tr>
+    <td>source</td>
+    <td>Returns the text of the RegExp pattern</td>
+  </tr>
+</table>
+<br>
+
+<table id="objectMethods" style="width:70%" align="center"> 
+<h2><span>RegExp Object Methods</span></h2>
+<tr>
+    <th>Method</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>compile()</td>
+    <td><span class="deprecated">Deprecated in version 1.5.</span> Compiles a regular expression</td>
+  </tr>
+  <tr>
+    <td>exec()</td>
+    <td>Tests for a match in a string. Returns the first match</td>
+  </tr>
+  <tr>
+    <td>test()</td>
+    <td>Tests for a match in a string. Returns true or false</td>
+  </tr>
+   <tr>
+    <td>toString()</td>
+    <td>Returns the string value of the regular expression</td>
+  </tr>
+</table>
+<br>
+
+
+
+<pre id=sample></pre>
+<hr>
+<b>References</b>
+<br>
+<a href="https://emrahtema.github.io/Automata/regexp/EmrahTema_Regexp.html" target="ExternalDocument">Term project by Emrah Tema</a>
+<br>
+<a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="ExternalDocument">w3schools regex</a>
+<br>
+<a href="https://www.lifewire.com/what-are-regular-expressions-4173889" target="ExternalDocument">lifewire</a>
+</hr>
+<script>
+"use strict";
+function setValues() {
+    def.value = "[0-9]*( cm| kg)"
+    inp.value = "My Height = 180 cm , My Weight = 86 kg";
+    checkRE();
+}
+function checkRE() {
+    if (def.value && inp.value) {
+        const exp = new RegExp(def.value,'g');
+        const str = "<span class=found>$&</span>";
+        out.innerHTML = inp.value.replace(exp, str);
+    }
+}
+    title.innerText = document.title; setValues();
+</script>
+</div>
+</body>
+</html>
