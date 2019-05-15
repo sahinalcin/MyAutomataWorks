@@ -33,5 +33,5 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * HW3 : [MicroJ1 Modifying](https://sahinalcin.github.io/MyAutomataWorks/HW3/HW3.html)
 
-* HW4 : [Term Project Demo Version](https://sahinalcin.github.io/MyAutomataWorks/HW4/HW4.html)
+* HW4 : [Demo Version of Term Project](https://sahinalcin.github.io/MyAutomataWorks/HW4/HW4.html)
 
