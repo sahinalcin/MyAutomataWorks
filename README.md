@@ -23,7 +23,7 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 * CW9 : [First Appearance of Term Project](https://sahinalcin.github.io/MyAutomataWorks/CW9/CW9.html)
 
-* CW10 : [Graph Algorithms](https://sahinalcin.github.io/MyAutomataWorks/CW10/CW10.pdf)
+* CW10 : [Graph Algorithms](https://sahinalcin.github.io/MyAutomataWorks/CW10/CW10.PNG)
 
 
 ### Home Works
