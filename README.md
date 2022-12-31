@@ -1,10 +1,11 @@
-## ŞAHİN ALÇIN
-My BLM320E Formal Languages and Automata Theory Course Works
+My 2018-2019 Spring Term BLM320E Formal Languages and Automata Theory Course Works
 
 ### Term Project
+
 * [Regular Expressions](https://sahinalcin.github.io/MyAutomataWorks/PROJECT/MyTermProject.html)
 
 ### Class Works
+
 * CW1 : [Deterministic Finite Automata](https://sahinalcin.github.io/MyAutomataWorks/CW1/CW1.html)
 
 * CW2 : [NFA, DFA and RegExp](https://sahinalcin.github.io/MyAutomataWorks/CW2/CW2.html)
@@ -27,6 +28,7 @@ My BLM320E Formal Languages and Automata Theory Course Works
 
 
 ### Home Works
+
 * HW1 : [RegExp for Strings and Arrays](https://sahinalcin.github.io/MyAutomataWorks/HW1/HW1.html)
 
 * HW2 : [Parsing of Math Operations](https://sahinalcin.github.io/MyAutomataWorks/HW2/HW2.html)
